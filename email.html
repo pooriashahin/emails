@@ -3,92 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="./main.css">
     <title>
         Appointment Request
     </title>
-    <style>
-        .email-content,
-        .footer-content,
-        .appointment-details,
-        .email-button {
-            font-size: 18px;
-        }
-
-        .footer-small {
-            font-size: 16px;
-        }
-
-        @media only screen and (max-width: 767px) {
-            .email-content {
-                font-size: 16px;
-            }
-
-            .footer-content {
-                font-size: 16px;
-            }
-
-            .appointment-details {
-                font-size: 16px;
-            }
-
-            .email-button {
-                font-size: 16px;
-            }
-
-            .footer-small {
-                font-size: 14px;
-            }
-        }
-
-        @media only screen and (max-width: 450px) {
-            .email-content {
-                font-size: 16px;
-            }
-
-            .footer-content {
-                font-size: 16px;
-            }
-
-            .appointment-details {
-                font-size: 16px;
-            }
-
-            .email-button {
-                font-size: 16px;
-            }
-
-            .footer-small {
-                font-size: 14px;
-            }
-        }
-
-        @media only screen and (max-width: 360px) {
-            .email-content {
-                font-size: 14px;
-            }
-
-            .footer-content {
-                font-size: 14px;
-            }
-
-            .appointment-details {
-                font-size: 14px;
-            }
-
-            .email-button {
-                font-size: 14px;
-            }
-
-            .footer-small {
-                font-size: 12px;
-            }
-        }
-    </style>
 </head>
 
-<body style="font-family:  'Helvetica 55 Roman', sans-serif;">
+<body style="font-family: 'Helvetica 55 Roman', sans-serif;">
 
-    <!-- footer -->
+    <!-- logo & header -->
 
     <table style="min-width:100%;">
         <tr>
@@ -103,153 +26,151 @@
 
     <!-- content -->
 
-    <div width="100%" style="min-width:100%;">
-        <div id="content" style="padding: 10px 5px;">
+    <div class="notification-body">
 
-            <table class="email-content">
-                <tr>
-                    <td valign="top" style="padding-top: 20px; line-height: 1.5em;">
-                        <p>
-                            Hi Dr. [Doctor’sLastName],
-                            <br><br>
-                            You have a new pending appointment request on Doctors Network.
-                            <br><br>
-                        </p>
-                    </td>
-                </tr>
-            </table>
+        <table class="notification-content">
+            <tr>
+                <td class="notification-content">
+                    <p>
+                        Hi Dr. [Doctor’sLastName],
+                        <br><br>
+                        You have a new pending appointment request on Doctors Network.
+                        <br><br>
+                    </p>
+                </td>
+            </tr>
+        </table>
 
-            <table class="appointment-details">
+        <table class="notification-details">
+            <tr>
+                <td class="label">
+                    Patient Name:
+                </td>
+                <td>
+                    customer_ name
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    Patient Email:
+                </td>
+                <td class="contact-info">
+                    customer_ email
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    Patient Phone:
+                </td>
+                <td class="contact-info">
+                    customer_ phone
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    Insurance:
+                </td>
+                <td>
+                    customer_ insurance
+            </tr>
+
+        </table>
+
+        <table class="notification-details">
+            <tr>
+                <td>
+                    <h3 style="margin-top: 30px;">
+                        Appointment Details
+                    </h3>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="label">
+                    Appointment Reason:
+                </td>
+                <td>
+                    appointment_ service
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    Appointment Date:
+                </td>
+                <td>
+                    appointment_ date
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    Appointment Time:
+                </td>
+                <td>
+                    appointment_ duration
+                </td>
+            </tr>
+
+        </table>
+
+        <br>
+
+        <table class="notification-details">
+
+            <tr>
+                <td class="label">
+                    Notes:
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    appointment_ Note
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>
+                    <p class="notification-content" style="margin-top: 25PX;">
+                        Please confirm this appointment in a timely manner.
+                    </p>
+                </td>
+            </tr>
+
+        </table>
+
+        <table class="notification-button">
+
+            <tr>
+                <td align="center">
+                    <p>
+                        <a style="background-color: #5ABBE9; color: white; padding: 12px 40px;  border-radius: 2rem; text-decoration: none; display: inline-table;"
+                            action-button href="{{BUTTON_LINK}}" class="buttonstyle">
+                            Confirm Appointment
+                        </a>
+                    </p>
+                </td>
+            </tr>
+
+        </table>
+
+        <table class="notification-content">
+            <tbody>
                 <tr>
-                    <td style=" font-weight: bold;">
-                        Patient Name:
-                    </td>
                     <td>
-                        customer_ name
+                        <p>Sincerely,</p>
+                        <p>Technical Team at Doctors Network</p>
+                        <p class="contact-info">support@doctorsnetwork.com</p>
+                        <p> </p>
                     </td>
                 </tr>
-                <tr>
-                    <td style="font-weight: bold;">
-                        Patient Email:
-                    </td>
-                    <td style="color: #2baadf;">
-                        customer_ email
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold;">
-                        Patient Phone:
-                    </td>
-                    <td style=" color: #2baadf;">
-                        customer_ phone
-                    </td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold;">
-                        Insurance:
-                    </td>
-                    <td>
-                        customer_ insurance
-                </tr>
+            </tbody>
+        </table>
 
-            </table>
-
-            <table class="appointment-details">
-                <tr>
-                    <td>
-                        <h3 style="margin-top: 30px;">
-                            Appointment Details
-                        </h3>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td style="font-weight: bold;">
-                        Appointment Reason:
-                    </td>
-                    <td>
-                        appointment_ service
-                    </td>
-                </tr>
-                <tr>
-                    <td class="label" style="font-weight: bold;">
-                        Appointment Date:
-                    </td>
-                    <td>
-                        appointment_ date
-                    </td>
-                </tr>
-                <tr>
-                    <td class="label" style="font-weight: bold;">
-                        Appointment Time:
-                    </td>
-                    <td>
-                        appointment_ duration
-                    </td>
-                </tr>
-
-            </table>
-
-            <br>
-
-            <table class="appointment-details">
-
-                <tr>
-                    <td style="font-weight: bold;">
-                        Notes:
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        appointment_ Note
-                    </td>
-                </tr>
-
-
-                <tr>
-                    <td>
-                        <p class="email-content" style="margin-top: 25PX;">
-                            Please confirm this appointment in a timely manner.
-                        </p>
-                    </td>
-                </tr>
-
-            </table>
-
-            <table class="email-button" style="width:100%; min-width:100%; margin-top: 25px; margin-bottom: 50px;">
-
-                <tr>
-                    <td align="center">
-                        <p class="button">
-                            <a style="background-color: #5ABBE9; color: white; padding: 12px 40px;  border-radius: 2rem; text-decoration: none; display: inline-table;"
-                                action-button href="{{BUTTON_LINK}}" class="buttonstyle">
-                                Confirm Appointment
-                            </a>
-                        </p>
-                    </td>
-                </tr>
-
-            </table>
-
-            <table class="email-content" style="max-width:100%; min-width:100%;" width="100%">
-                <tbody>
-                    <tr>
-                        <td valign="top" width="100%" class="mcnTextContent">
-                            <p class="sin">Sincerely,</p>
-                            <p class="tech">Technical Team at Doctors Network</p>
-                            <p class="support" style="color: #2baadf;">support@doctorsnetwork.com</p>
-                            <p> </p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-
-        </div>
     </div>
 
     <!-- footer -->
 
-    <table class="footer-content" style="width:100%; min-width:100%;" id="templateFooter">
+    <table class="footer-content" style="margin: 0px; padding: 0px;" id="templateFooter">
 
         <tr>
             <td align="center">
@@ -257,10 +178,12 @@
             </td>
         </tr>
 
+        <!-- social media buttons -->
+
         <table width="100%" style="min-width:100%;">
             <tbody>
                 <tr>
-                    <td align="center" valign="top" style="padding:9px">
+                    <td align="center" valign="top" style="padding-bottom:9px">
 
                         <table width="100%" style="min-width:100%;">
                             <tbody>
@@ -349,13 +272,14 @@
             </tbody>
         </table>
 
-        <table align="left" style="max-width:100%; min-width:100%; padding: 20px;" width="100%" class="footer-content">
+        <!-- end social media buttons -->
+
+        <table class="footer-content">
             <tbody>
                 <tr>
-                    <td align="center" valign="top" width="100%">
+                    <td align="center">
                         <p class="address">Sent by
-                            <a href="https://www.doctorsnetwork.com/" target="_blank"
-                                style="color: #2baadf; display: inline-block;">
+                            <a class="contact-info" href="https://www.doctorsnetwork.com/" target="_blank">
                                 Doctors Network</a>
                             - 1 MetroTech Center, Suite 1001, Brooklyn, NY 11201
                         </p>
@@ -363,6 +287,8 @@
                 </tr>
             </tbody>
         </table>
+
+        <!-- footer divider -->
 
         <table width="100%" style="min-width:100%;" class="mcnDividerBlock">
             <tr>
@@ -376,7 +302,9 @@
             </tr>
         </table>
 
-        <table class="footer-small" style="max-width:100%; min-width:100%; padding-bottom: 30px;" width="100%">
+        <!-- end footer divider -->
+
+        <table class="footer-small">
             <tr>
                 <td align="center" valign="top" width="100%">
                     <p class="policy">
