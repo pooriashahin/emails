@@ -127,61 +127,100 @@
 
 @media only screen and (max-width: 767px) {
     .review tbody {
-        
         text-align: left;
-        max-width: 200px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .review tbody {
+        display: block;
+
+    }
+}
+
+.likely-md {
+        
+    display: none;
+}
+
+@media only screen and (max-width: 767px) {
+    .likely-md {
+        
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .not-likely {
+        
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .likely-lg {
+        display: none;
     }
 }
 
 @media only screen and (max-width: 450px) {
-    .review tbody {
-        display: block;
-        text-align: left;
-        max-width: 200px;
+    .likely-lg {
+        display: none;
     }
 }
 
 @media only screen and (max-width: 360px) {
-    .review tbody {
+    .likely-lg {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .likely-lg {
         display: block;
-        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .likely-md {
+        display: none;
     }
 }
 
 @media only screen and (max-width: 767px) {
     .review-options p,
     .review-options-10 p {
-        font-size: 16px;
-        margin-right: 0px;
-        margin-left: 0px;
-    }
-}
-
-@media only screen and (max-width: 450px) {
-    .review-options p,
-    .review-options-10 p {
         font-size: 14px;
-        margin-right: 0px;
-        margin-left: 0px;
+        margin-right: 3px;
+        margin-left: 3px;
     }
 }
 
 @media only screen and (max-width: 450px) {
-    .review-options p {
-        max-width: 8px;
-    }
-}
-
-@media only screen and (max-width: 360px) {
-    .review-options p {
-        max-width: 5px;
-    }
-}
-
-@media only screen and (max-width: 360px) {
     .review-options p,
     .review-options-10 p {
         font-size: 12px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .review-options p {
+        max-width: 6px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .review-options p {
+        max-width: 3px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .review-options p,
+    .review-options-10 p {
+        font-size: 10px;
         margin-right: 0px;
         margin-left: 0px;
     }
