@@ -1,0 +1,266 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="./styles/main.css">
+    <title>
+        Appointment Update Request for Doctor
+    </title>
+</head>
+
+<body style="font-family: 'Helvetica 55 Roman', sans-serif;  margin: 10px;">
+
+    <!-- logo & header -->
+
+    <table style="min-width:100%;">
+        <tr>
+            <td valign="top" style="padding: 9px; text-align:center;">
+                <a href="https://www.doctorsnetwork.com/" target="_blank">
+                    <img alt="DoctorsNetwork" src="https://s3-us-west-2.amazonaws.com/drsnwk/logo.png" width="92"
+                        style="max-width:92px; padding-bottom: 0; display: inline !important; vertical-align: bottom;">
+                </a>
+            </td>
+        </tr>
+    </table>
+
+    <!-- content -->
+
+    <div class="notification-body">
+
+        <table class="notification-content">
+            <tr>
+                <td class="notification-content">
+                    <p>
+                        Hi Dr.
+                        <?= $provider['last_name'] ?>,
+                        <br><br>
+                        The following appointment update was requested by the patient.
+                        <br><br>
+                    </p>
+                </td>
+            </tr>
+        </table>
+
+        <table class="notification-details">
+            <tr>
+                <td class="label">
+                    Patient Name:
+                </td>
+                <td>
+                    <?= $customer_name ?>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    Patient Email:
+                </td>
+                <td class="contact-info">
+                    <?= $customer_email ?>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    Patient Phone:
+                </td>
+                <td class="contact-info">
+                    <?= $customer_phone ?>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    Insurance:
+                </td>
+                <td>
+                    <?= customer_insurance ?>
+            </tr>
+
+        </table>
+
+        <table class="notification-details">
+            <tr>
+                <td>
+                    <h3 style="margin-top: 30px;">
+                        Appointment Details
+                    </h3>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="label">
+                    Appointment Reason:
+                </td>
+                <td>
+                    <?= $appointment_service ?>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    Appointment Date:
+                </td>
+                <td>
+                    <?= $appointment_start_date ?>
+                </td>
+            </tr>
+
+        </table>
+
+        <br>
+
+        <table class="notification-details">
+
+            <tr>
+                <td class="label">
+                    Notes:
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <?= $reason ?>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p class="notification-content" style="margin-top: 25PX;">
+                        Please confirm this appointment in a timely manner.
+                    </p>
+                </td>
+            </tr>
+
+        </table>
+
+        <table class="notification-button">
+
+            <tr>
+                <td align="center">
+                    <p>
+                        <a action-button href="{{BUTTON_LINK}}" class="buttonstyle">
+                            Confirm Appointment
+                        </a>
+                    </p>
+                </td>
+            </tr>
+
+        </table>
+
+        <table class="notification-content">
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Sincerely,</p>
+                        <p>Technical Team at Doctors Network</p>
+                        <p class="contact-info">support@doctorsnetwork.com</p>
+                        <p> </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <!-- footer -->
+
+    <table class="footer-content" style="margin: 0px; padding: 0px;" id="templateFooter">
+
+        <tr>
+            <td align="center">
+                <p>Connect with us on:</p>
+            </td>
+        </tr>
+    </table>
+
+    <!-- social media buttons -->
+
+    <table align="center" class="social-media">
+        <tbody>
+
+            <tr>
+                <td class="social-media-icons">
+                    <a href="https://www.facebook.com/doctorsnwk/" target="_blank">
+                        <img src="https://s3-us-west-2.amazonaws.com/drsnwk/icons/facebook.png" alt="Facebook">
+                    </a>
+                </td>
+
+                <td class="social-media-icons">
+                    <a href="https://www.instagram.com/drsnetwork/" target="_blank">
+                        <img src="https://s3-us-west-2.amazonaws.com/drsnwk/icons/instagram.png" alt="Instagram">
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="social-media-icons">
+                    <a href="https://www.youtube.com/channel/UCiSKJVWqP6nHBV0dN289thw" target="_blank">
+                        <img src="https://s3-us-west-2.amazonaws.com/drsnwk/icons/youtube.png" alt="YouTube">
+                    </a>
+                </td>
+
+                <td class="social-media-icons">
+                    <a href="https://twitter.com/drsnetwork" target="_blank">
+                        <img src="https://s3-us-west-2.amazonaws.com/drsnwk/icons/twitter.png" alt="Twitter">
+                    </a>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <!-- end social media buttons -->
+
+    <table class="footer-content">
+        <tbody>
+            <tr>
+                <td align="center">
+                    <p class="address">Sent by
+                        <a class="contact-info" href="https://www.doctorsnetwork.com/" target="_blank">
+                            Doctors Network</a>
+                        - 1 MetroTech Center, Suite 1001, Brooklyn, NY 11201
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- footer divider -->
+
+    <table class="footer-divider">
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <span></span>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <!-- end footer divider -->
+
+    <table class="footer-small">
+        <tr>
+            <td>
+                <p class="policy">
+                    <a href="{{UNSUBSCRIBE_LINK}}" target="_blank">
+                        Unsubscribe</a> -
+                    <a href="https://www.doctorsnetwork.com/terms-of-use" target="_blank">
+                        Terms of Service</a> -
+                    <a href="https://www.doctorsnetwork.com/security" target="_blank">
+                        Privacy Policy</a>
+                </p>
+                <br>
+                <p class="copyright">
+                    Copyright © {{CURRENT_YEAR}} Doctors Network Solutions, LLC, All
+                    rights
+                    reserved.
+                </p>
+            </td>
+        </tr>
+    </table>
+
+
+
+</body>
+
+</html>
