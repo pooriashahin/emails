@@ -40,6 +40,15 @@
     margin-bottom: 50px;
 }
 
+.notification-button a {
+    background-color: #5ABBE9; 
+    color: white; 
+    padding: 12px 40px;  
+    border-radius: 2rem; 
+    text-decoration: none; 
+    display: inline-table;
+}
+
 .footer-content {
     text-align: left;
     max-width:100%; 
@@ -53,6 +62,52 @@
     min-width:100%; 
     padding-bottom: 30px;
     width: 100%;
+    text-align: center;
+}
+
+.footer-small a {
+    color: #656565; 
+    display: inline-block;
+}
+
+.footer-divider,
+.footer-divider table,
+.footer-divider td {
+    width: 100%;
+    min-width: 100%;
+}
+
+.footer-divider table {
+    border-top: 2px solid #EEEEEE;
+}
+
+.footer-divider td {
+    padding: 10px 18px 25px;
+}
+
+.social-media tbody {
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 300px) {
+    .social-media tbody {
+        display: block;
+    }
+}
+
+.social-media-icons {
+    padding-right: 5px; 
+    padding-left: 5px;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+.social-media-icons img {
+    width:42px; 
+    max-width:42px; 
+    
 }
 
 @media only screen and (max-width: 767px) {
