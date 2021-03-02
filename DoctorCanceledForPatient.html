@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet" href="./styles/main.css">
     <title>
-        Appointment Request for Patient
+        Appointment Canceled by Doctor for Patient
     </title>
 </head>
 
@@ -35,9 +35,7 @@
                         Hi
                         <?= $customer['first_name'] ?>,
                         <br><br>
-                        The following appointment was requested on your behalf.
-                        <br>Please keep in mind that this appointment is still pending.
-                        <br>We will notify you as soon as it is confirmed by the doctor’s office.
+                        The following appointment was canceled by the doctor’s office.
                         <br><br>
                     </p>
                 </td>
@@ -87,26 +85,38 @@
                     <?= $appointment_start_date ?>
                 </td>
             </tr>
-            <br>
+
+        </table>
+
+        <table class="notification-details">
+            <tr>
+                <td class="label">
+                    <br>
+                    Notes:
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <?= $reason ?>
+                </td>
+            </tr>
             <tr>
                 <td>
                     <p class="notification-content" style="margin-top: 25PX;">
-                        You can reschedule or cancel your request by clicking on the button below.
+                        We apologize for the inconvenience. Please click on the button below to book a new appointment.
                     </p>
                 </td>
             </tr>
 
         </table>
 
-
-
         <table class="notification-button">
 
             <tr>
                 <td align="center">
                     <p>
-                        <a action-button href="<?= $appointment_link ?>" class="buttonstyle">
-                            Reschedule or Cancel
+                        <a action-button href="https://www.doctorsnetwork.com/dental-plans" class="buttonstyle">
+                            Book Appointment
                         </a>
                     </p>
                 </td>

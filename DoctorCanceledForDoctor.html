@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet" href="./styles/main.css">
     <title>
-        Appointment Request for Patient
+        Appointment Canceled by Doctor for Doctor
     </title>
 </head>
 
@@ -32,12 +32,10 @@
             <tr>
                 <td class="notification-content">
                     <p>
-                        Hi
-                        <?= $customer['first_name'] ?>,
+                        Hi Dr.
+                        <?= $provider['last_name'] ?>,
                         <br><br>
-                        The following appointment was requested on your behalf.
-                        <br>Please keep in mind that this appointment is still pending.
-                        <br>We will notify you as soon as it is confirmed by the doctor’s office.
+                        The following appointment was canceled upon your request.
                         <br><br>
                     </p>
                 </td>
@@ -47,27 +45,34 @@
         <table class="notification-details">
             <tr>
                 <td class="label">
-                    Doctor Name:
+                    Patient Name:
                 </td>
                 <td>
-                    <?= $appointment_provider ?>
+                    <?= $customer_name ?>
                 </td>
             </tr>
             <tr>
                 <td class="label">
-                    Phone Number:
+                    Patient Email:
                 </td>
                 <td class="contact-info">
-                    <?= $provider['phone_number'] ?>
+                    <?= $customer_email ?>
                 </td>
             </tr>
             <tr>
                 <td class="label">
-                    Address:
+                    Patient Phone:
+                </td>
+                <td class="contact-info">
+                    <?= $customer_phone ?>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    Insurance:
                 </td>
                 <td>
-                    <?= $provider['address'] ?>
-                </td>
+                    <?= customer_insurance ?>
             </tr>
 
             <tr>
@@ -91,22 +96,20 @@
             <tr>
                 <td>
                     <p class="notification-content" style="margin-top: 25PX;">
-                        You can reschedule or cancel your request by clicking on the button below.
+                        Please log in to see the appointment details.
                     </p>
                 </td>
             </tr>
 
         </table>
 
-
-
         <table class="notification-button">
 
             <tr>
                 <td align="center">
                     <p>
-                        <a action-button href="<?= $appointment_link ?>" class="buttonstyle">
-                            Reschedule or Cancel
+                        <a action-button href="{{BUTTON_LINK}}" class="buttonstyle">
+                            Log In
                         </a>
                     </p>
                 </td>
