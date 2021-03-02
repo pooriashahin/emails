@@ -97,6 +97,104 @@
     }
 }
 
+.review tbody {
+    display: flex;
+    margin-top: 5px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.review-options p {
+    border: solid 2px darkslategray;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    margin: 5px;
+    max-width: 10px;
+}
+
+.review-options-10 p {
+    border: solid 2px darkslategray;
+    padding: 5px;
+    padding-left: 5px;
+    padding-right: 6px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 5px;
+    
+}
+
+@media only screen and (max-width: 767px) {
+    .review tbody {
+        
+        text-align: left;
+        max-width: 200px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .review tbody {
+        display: block;
+        text-align: left;
+        max-width: 200px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .review tbody {
+        display: block;
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .review-options p,
+    .review-options-10 p {
+        font-size: 16px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .review-options p,
+    .review-options-10 p {
+        font-size: 14px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .review-options p {
+        max-width: 8px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .review-options p {
+        max-width: 5px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .review-options p,
+    .review-options-10 p {
+        font-size: 12px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
+
+.review-options a {
+    text-decoration: none;
+}
+
+.review-options-10 a {
+    text-decoration: none;
+}
+
 .social-media-icons {
     padding-right: 5px; 
     padding-left: 5px;
