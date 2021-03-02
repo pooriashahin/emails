@@ -32,7 +32,8 @@
             <tr>
                 <td class="notification-content">
                     <p>
-                        Hi Dr. [Doctor’sLastName],
+                        Hi Dr.
+                        <?= $provider['last_name'] ?>,
                         <br><br>
                         You have a new pending appointment request on Doctors Network.
                         <br><br>
@@ -47,7 +48,7 @@
                     Patient Name:
                 </td>
                 <td>
-                    customer_ name
+                    <?= $customer_name ?>
                 </td>
             </tr>
             <tr>
@@ -55,7 +56,7 @@
                     Patient Email:
                 </td>
                 <td class="contact-info">
-                    customer_ email
+                    <?= $customer_email ?>
                 </td>
             </tr>
             <tr>
@@ -63,7 +64,7 @@
                     Patient Phone:
                 </td>
                 <td class="contact-info">
-                    customer_ phone
+                    <?= $customer_phone ?>
                 </td>
             </tr>
             <tr>
@@ -71,7 +72,7 @@
                     Insurance:
                 </td>
                 <td>
-                    customer_ insurance
+                    <?= customer_insurance ?>
             </tr>
 
         </table>
@@ -90,7 +91,7 @@
                     Appointment Reason:
                 </td>
                 <td>
-                    appointment_ service
+                    <?= $appointment_service ?>
                 </td>
             </tr>
             <tr>
@@ -98,15 +99,7 @@
                     Appointment Date:
                 </td>
                 <td>
-                    appointment_ date
-                </td>
-            </tr>
-            <tr>
-                <td class="label">
-                    Appointment Time:
-                </td>
-                <td>
-                    appointment_ duration
+                    <?= $appointment_start_date ?>
                 </td>
             </tr>
 
@@ -123,7 +116,7 @@
             </tr>
             <tr>
                 <td>
-                    appointment_ Note
+                    <?= $reason ?>
                 </td>
             </tr>
 
